@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz__container">
+      <h2 id="quizOrder">1/10</h2>
+      <!-- PROGRESS START -->
+      <div class="quiz__progress--container">
+        <div class="quiz__progress"></div>
+      </div>
+      <!-- PROGRESS END -->
+
+      <!-- QUESTION START -->
+
+      <div class="question-body">
+        <div>
+          <h1>
+            1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            nesciunt eum quod velit dolorem aut voluptas hic. Eos fugiat
+            architecto explicabo atque exercitationem, ea distinctio?
+          </h1>
+        </div>
+        <div class="question__answers">
+          <div class="question__answer">
+            <div class="choice">A</div>
+            <div class="text">Lorem ipsum dolor sit amet.</div>
+          </div>
+          <div class="question__answer">
+            <div class="choice">A</div>
+            <div class="text">Lorem ipsum dolor sit amet.</div>
+          </div>
+          <div class="question__answer">
+            <div class="choice">A</div>
+            <div class="text">Lorem ipsum dolor sit amet.</div>
+          </div>
+          <div class="question__answer">
+            <div class="choice">A</div>
+            <div class="text">Lorem ipsum dolor sit amet.</div>
+          </div>
+        </div>
+        <button class="quiz__btn">NEXT</button>
+      </div>
+
+      <!-- QUESTION END -->
+
+      <div class="quiz__modal">
+        <div class="quiz__modal-body">
+          <img
+            style="width: 35px"
+            class="modal__close"
+            src="img/close.jpg"
+            alt=""
+          />
+          <img width="128px" height="128px" src="img/congrats.jpg" alt="" />
+          <p class="modal__text">
+            Congrats, you have <span id="totalCorrectChoice">3</span> correct
+            choice.
+          </p>
+          <button class="quiz__btn">REPEAT QUIZ</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
